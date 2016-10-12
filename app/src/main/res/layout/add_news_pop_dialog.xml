@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="16dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@drawable/rounded_edit_text">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:id="@+id/news_radio_group"
+            android:orientation="horizontal">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:id="@+id/news_official"
+                android:layout_height="60dp"
+                android:text="Official"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:id="@+id/news_say_something"
+                android:layout_height="wrap_content"
+                android:text="Say Something"
+                />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:id="@+id/news_advert"
+                android:layout_height="wrap_content"
+                android:text="Adv"
+
+                />
+        </RadioGroup>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/news_radio_group"
+            android:id="@+id/linear_Layout_for_news"
+            android:orientation="vertical">
+        <EditText
+            android:id="@+id/news_actv_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/news_radio_group"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif"
+            android:hint="Heading ... " />
+
+        <EditText
+            android:id="@+id/news_actv_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/news_actv_heading"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif"
+            android:hint="type text here " />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/attach_news_actv_button"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_below="@id/linear_Layout_for_news"
+            android:background="?android:selectableItemBackground"
+            android:scaleType="centerCrop"
+            android:tint="@color/hint_text_color"
+            app:srcCompat="@drawable/ic_attach_file" />
+
+        <TextView
+            android:id="@+id/attach_info_news_actv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/linear_Layout_for_news"
+            android:layout_toRightOf="@id/attach_news_actv_button"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:text="no attachment added" />
+
+        <ImageButton
+            android:id="@+id/post_news_actv_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="?android:selectableItemBackground"
+            android:scaleType="centerCrop"
+            android:tint="@color/colorPrimary"
+            app:srcCompat="@drawable/ic_assignment"
+            android:layout_below="@+id/attach_news_actv_button"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="4dp">
+
+        <TextView
+            android:id="@+id/course_news_card_image"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:textAlignment="center"
+            android:background="@drawable/circle_textview_background"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginLeft="16dp"
+            android:text="M" />
+
+        <TextView
+            android:id="@+id/course_news_card_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/md_keylines"
+            android:fontFamily="sans-serif"
+            android:layout_toRightOf="@id/course_news_card_image"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="#000000"
+            android:textSize="@dimen/article_titles"
+            tools:text="CPE121" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/course_news_card_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="50"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textColor="@color/secondary_text_color"
+        android:textSize="@dimen/article_subheading"
+        android:text="Computer Appreciation"
+        android:textIsSelectable="true"
+        android:autoLink="web"/>
+    <TextView
+        android:id="@+id/extenstion_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="1"
+        android:paddingLeft="16dp"
+        android:paddingBottom="4dp"
+        android:paddingRight="42dp"
+        android:textColor="#000000"
+        android:textSize="@dimen/article_subheading"
+        android:text="v"
+        android:gravity="end"
+        android:textAlignment="textEnd"
+        android:textStyle="bold"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="4dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13h"
+            android:fontFamily="sans-serif"
+            android:id="@+id/time_passed_news_text_view"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textColor="@color/hint_text_color"
+           />
+        <TextView
+            android:layout_width="32dp"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:background="@drawable/circle_textview_background"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:id="@+id/cback"
+            android:layout_centerInParent="true"
+            android:text="" />
+        <ImageButton
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/cnews_comment_image_button"
+            android:layout_gravity="center"
+            android:tint="#FFFFFF"
+            android:background="?android:selectableItemBackground"
+            app:srcCompat = "@drawable/ic_question_answer" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:text="13"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:id="@+id/number_of_news_comments_text_view"
+            android:layout_toRightOf="@id/cback"/>
+        <TextView
+            android:layout_width="32dp"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:background="@drawable/circle_textview_background"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_marginRight="12dp"
+            android:layout_alignParentRight="true"
+            android:text="" />
+        <ImageButton
+            android:layout_marginTop="4dp"
+            android:tint="#FFFFFF"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="16dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/news_attach_image_button"
+            android:layout_gravity="center"
+            android:background="?android:selectableItemBackground"
+            app:srcCompat = "@drawable/ic_attach_file" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/view_divider"
+        android:background="@color/hint_text_color" />
+
+</LinearLayout>

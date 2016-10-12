@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="android.ememobong.com.gpax.AddPastQuestionDetails">
+    <ImageView
+        android:id="@+id/show_snapped_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/gentestimage"
+        android:scaleType="centerCrop"/>
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/ic_delete_black_24dp"
+        android:scaleType="centerCrop"
+        android:background="?android:selectableItemBackground"
+        android:tint = "#FFFFFF"
+        android:id="@+id/retake_past_question_picture"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"/>
+
+    <ImageButton
+        android:id="@+id/cancel_current_operation"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:tint = "#FFFFFF"
+        app:srcCompat="@drawable/ic_cancel_black_24dp"
+        android:scaleType="centerCrop"
+        android:background="?android:selectableItemBackground"/>
+    <ImageButton
+        android:id="@+id/add_to_current_operation"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:tint = "#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:background="?android:selectableItemBackground"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        app:srcCompat="@drawable/ic_cloud_upload"
+        android:scaleType="centerCrop"/>
+    <ImageButton
+        android:id="@+id/finish_current_operation"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:tint = "#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        android:scaleType="centerCrop"
+        android:background="?android:selectableItemBackground"
+        app:srcCompat="@drawable/ic_cloud_done"/>
+
+</RelativeLayout>

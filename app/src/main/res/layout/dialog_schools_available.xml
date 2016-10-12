@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="50dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/schools_avialable"
+        android:hint="select your school and continue"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="8dp"
+        android:ems="20"
+        android:inputType="textAutoComplete">
+    </AutoCompleteTextView>
+
+    <ImageButton
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/ok_schools_available_button"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/schools_avialable"
+        app:srcCompat = "@drawable/ic_check_circle_black_24dp"
+        android:tint="@color/colorPrimary"
+        android:background="?android:selectableItemBackground"
+        />
+</RelativeLayout>

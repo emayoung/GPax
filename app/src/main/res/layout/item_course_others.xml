@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_resources_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:elevation="4dp"
+    android:layout_marginBottom="@dimen/tile_padding"
+    android:foreground="?attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/others_profile_image_thumbnail"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            androidsrc="@drawable/ic_person_black"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:id="@+id/others_profile_details_of_contributor"
+            android:text="Annonymous contributed to CPE211"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif"
+            android:textColor="#000000"
+            android:layout_toRightOf="@id/others_profile_image_thumbnail"
+            android:padding="4dp"
+            android:singleLine="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/others_date_resource_is_contributed"
+            android:text="Thur, 06 Sept, 2016 by 15:05:34"
+            android:layout_toRightOf="@id/others_profile_image_thumbnail"
+            android:singleLine="true"
+            android:textColor="@color/hint_text_color"
+            android:paddingLeft="8dp"
+            android:layout_below="@id/others_profile_details_of_contributor"
+            android:layout_alignBaseline="@id/others_profile_image_thumbnail"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:padding="1dp"
+            android:background="@color/hint_text_color"
+            android:layout_below="@id/others_date_resource_is_contributed"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/others_comment_by_contributor"
+            android:layout_marginLeft="@dimen/tile_padding"
+            android:fontFamily="sans-serif"
+            android:layout_marginRight="@dimen/tile_padding"
+            android:text="Past question for 2015/217 session"
+            android:textColor="@color/secondary_text_color"
+            android:padding = "4dp"
+            android:layout_below="@id/others_date_resource_is_contributed"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/others_linear_layout_for_images"
+            android:layout_below="@id/others_comment_by_contributor"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Click here to checkout."
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:background="#EEEEEE"
+                android:id="@+id/others_checkout_uploads_for_course"
+                />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6 likes"
+            android:paddingLeft="8dp"
+            android:padding="8dp"
+            android:layout_marginLeft="36dp"
+            android:textColor="#000000"
+            android:layout_below="@id/others_linear_layout_for_images"
+            android:id="@+id/others_number_of_likes_text_view"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12 comments"
+            android:layout_marginRight="16dp"
+            android:layout_alignParentRight="true"
+            android:padding="8dp"
+            android:textColor="#000000"
+            android:layout_below="@id/others_linear_layout_for_images"
+            android:id="@+id/others_number_of_comments_text_view"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:padding="4dp"
+            android:layout_below="@id/others_number_of_likes_text_view"
+            android:background="#EEEEEE">
+            <TextView
+                android:layout_width="32dp"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:background="@drawable/circle_textview_background"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:layout_marginLeft="33dp"
+                android:text="" />
+            <ImageButton
+                android:layout_marginTop="4dp"
+                android:tint="#FFFFFF"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="36dp"
+                android:id="@+id/others_likes_image_button"
+                android:background="?android:selectableItemBackground"
+                app:srcCompat = "@drawable/ic_thumb_up_black_24dp"
+                />
+            <View
+                android:padding="4dp"
+                android:layout_width="1dp"
+                android:background="@color/hint_text_color"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"/>
+            <TextView
+                android:layout_width="32dp"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:background="@drawable/circle_textview_background"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:layout_marginRight="45dp"
+                android:layout_alignParentRight="true"
+                android:text="" />
+            <ImageButton
+                android:layout_marginTop="4dp"
+                android:tint="#FFFFFF"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginRight="48dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/others_comment_image_button"
+                android:layout_gravity="center"
+                android:background="?android:selectableItemBackground"
+                app:srcCompat = "@drawable/ic_question_answer" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="50dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/official_pass_edit"
+        android:hint="enter official password"
+        android:inputType="textPassword"
+        android:background="@drawable/rounded_edit_text"
+        android:imeOptions="actionGo"/>
+    <ImageButton
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_margin="16dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/ok_official_but"
+        app:srcCompat = "@drawable/ic_check_circle_black_24dp"
+        android:tint="@color/colorPrimary"
+        android:background="?android:selectableItemBackground"
+        android:layout_below="@+id/official_pass_edit"
+        android:layout_centerHorizontal="true" />
+    <ImageButton
+        android:layout_margin="16dp"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/cancel_official_but"
+        app:srcCompat = "@drawable/ic_cancel_black_24dp"
+        android:background="?android:selectableItemBackground"
+        android:layout_below="@+id/official_pass_edit"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>

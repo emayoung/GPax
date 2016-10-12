@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "135295381887",
+    "firebase_url": "https://gpax-c6ec0.firebaseio.com",
+    "project_id": "gpax-c6ec0",
+    "storage_bucket": "gpax-c6ec0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:135295381887:android:001c2c53adac499a",
+        "android_client_info": {
+          "package_name": "android.ememobong.com.gpax"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "135295381887-oj9uehcihrpqqnr1fflvf6bc0lfvls0j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "android.ememobong.com.gpax",
+            "certificate_hash": "63475367EE19D7934412918C2E994751CF9E36D9"
+          }
+        },
+        {
+          "client_id": "135295381887-mqofbdbbmsgbd502sivd8okkha1rforf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQiRQrUVZSIxq8diSkFq-TGxeLAPWzuHk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "135295381887-mqofbdbbmsgbd502sivd8okkha1rforf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

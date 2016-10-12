@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginTop="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/new_coure_code_textview"
+            android:text="CPE111"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:layout_marginBottom="8dp"/>
+        <EditText
+            android:layout_below="@id/new_coure_code_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/new_course_name_edit_text"
+            android:hint="course name"
+            android:inputType="textAutoCorrect"
+            android:background="@drawable/rounded_edit_text"
+            android:imeOptions="actionNext"/>
+        <EditText
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/new_course_name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:id="@+id/new_course_creditunit_edit_text"
+            android:hint="credit units"
+            android:inputType="numberDecimal"
+            android:background="@drawable/rounded_edit_text"
+            android:imeOptions="actionNext"/>
+
+        <ImageButton
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            app:srcCompat = "@drawable/ic_check_circle_black_24dp"
+            android:tint="@color/colorPrimary"
+            android:background="?android:selectableItemBackground"
+            android:id="@+id/add_new_course"
+            android:layout_below="@+id/new_course_creditunit_edit_text"
+            android:layout_alignLeft="@+id/new_course_creditunit_edit_text"
+            android:layout_alignStart="@+id/new_course_creditunit_edit_text" />
+    </RelativeLayout>
+
+</RelativeLayout>

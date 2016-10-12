@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="16dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rounded_edit_text">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Support with ....   "
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="8dp"
+    android:gravity="center"
+    android:textStyle="bold"
+    />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:id="@+id/radio_group"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:id="@+id/past_question_radio_but"
+            android:layout_height="60dp"
+            android:text="PQ/Notes"
+            android:padding="8dp"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:id="@+id/other_radio_but"
+            android:layout_height="wrap_content"
+            android:text="Others"
+            android:padding="8dp"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:id="@+id/news_radio_but"
+            android:layout_height="wrap_content"
+            android:text="News"
+            android:padding="8dp"
+            />
+
+    </RadioGroup>
+    <AutoCompleteTextView
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/resource_dept_codes"
+        android:hint="course"
+        android:layout_marginTop="36dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:ems="10"
+        android:inputType="textCapCharacters">
+    </AutoCompleteTextView>
+    <AutoCompleteTextView
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/resource_semester_codes"
+        android:hint="code"
+        android:layout_marginTop="36dp"
+        android:layout_toRightOf="@id/resource_dept_codes"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:ems="10"
+        android:inputType="number">
+    </AutoCompleteTextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/resource_semester_codes"
+        android:text="No course is selected!"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/dark_grey"
+        android:id="@+id/resource_course_textview"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="comment"
+        android:fontFamily="sans-serif"
+        android:id="@+id/comment_edit_text"
+        android:layout_below="@id/resource_course_textview"
+        android:layout_margin="@dimen/md_keylines"/>
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/ic_camera"
+        android:scaleType="centerCrop"
+        android:background="?android:selectableItemBackground"
+        android:tint="@color/hint_text_color"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/comment_edit_text"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/resource_camera_image_button"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:text="@string/ok"
+        android:id="@+id/add_res_ok_and_check"
+        android:layout_above="@+id/resource_course_textview"
+        android:layout_alignRight="@+id/comment_edit_text"
+        android:layout_alignEnd="@+id/comment_edit_text" />
+
+</RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

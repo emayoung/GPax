@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:icon="@drawable/gentestimage"
+            android:tint="@color/button_grey"
+            android:title="My Profle" />
+        <item
+            android:icon="@drawable/gentestimage"
+            android:tint="@color/button_grey"
+            android:title="Courses" />
+        <item
+            android:id="@+id/news_nav"
+            android:icon="@drawable/ic_filter_tilt_shift"
+            android:tint="#FFFFFF"
+            android:title="Posts" />
+        <item
+            android:icon="@drawable/gentestimage"
+            android:tint="@color/button_grey"
+            android:title="Feedback" />
+        <item
+            android:icon="@drawable/gentestimage"
+            android:tint="@color/button_grey"
+            android:title="Donate" />
+        <item
+            android:icon="@drawable/gentestimage"
+            android:tint="@color/button_grey"
+            android:title="About" />
+    </group>
+</menu>

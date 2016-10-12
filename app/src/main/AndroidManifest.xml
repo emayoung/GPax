@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="android.ememobong.com.gpax">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="android.ememobong.com.gpax.GlideConfiguration"
+            android:value="GlideModule" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="ocr" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".PasswordActivity"
+            android:label="@string/title_activity_password"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".UserDetailsActivity" />
+        <activity
+            android:name=".SubscribeForResourcesActivity"
+            android:label="SubscribeForResources"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".OcrCaptureActivity" />
+
+        <service
+            android:name=".background.NotificationService"
+            android:enabled="true"
+            android:label="NotificationService"></service>
+
+        <receiver android:name=".background.NetworkBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".AddPastQuestionDetails" />
+        <activity
+            android:name=".ViewCourseResourcesActivity"
+            android:label="@string/title_activity_view_course_resources"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".ResourcesForCourseActivity" />
+        <activity
+            android:name=".NewsActivity"
+            android:label="@string/title_activity_news"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.ememobong.com.gpax.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>
